@@ -1,6 +1,6 @@
 package com.me;
 
-public class Player {
+public class Team {
 
     //step 1 create fields for Player
     private String player1;
@@ -10,7 +10,7 @@ public class Player {
     private String player5;
 
     //step 2 make my own constructor method with parameters
-    public Player(String player1, String player2, String player3,
+    public Team(String player1, String player2, String player3,
                   String player4, String player5){
 
         //step 3 this. to reference fields
