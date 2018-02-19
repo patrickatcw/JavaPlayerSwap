@@ -23,5 +23,23 @@ public class Player {
     }
 
     //step 4 create getters
+    public String getPlayer1() {
+        return player1;
+    }
 
+    public String getPlayer2() {
+        return player2;
+    }
+
+    public String getPlayer3() {
+        return player3;
+    }
+
+    public String getPlayer4() {
+        return player4;
+    }
+
+    public String getPlayer5() {
+        return player5;
+    }
 }
