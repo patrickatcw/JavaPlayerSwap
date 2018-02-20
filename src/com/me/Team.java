@@ -22,6 +22,13 @@ public class Team {
 
     }
 
+    //step 7 methods to switch players          ****work on this
+    //i want to replace one player with another player on different teams
+    public void replacePlayer(String playerNameRemove, String playerNameAdd){
+
+
+    }
+
     //step 4 create getters
     public String getPlayer1() {
         return player1;
