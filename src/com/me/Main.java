@@ -19,23 +19,21 @@ public class Main {
         System.out.println("-------------------------------------------------");
         System.out.println("Here are the team rosters for the player swap;");
         System.out.println();
-        System.out.println("Team Blue: " + blue.getPlayer1() + ", " + blue.getPlayer2() + ", " + blue.getPlayer3()
-                + ", " + blue.getPlayer4() + ", " + blue.getPlayer5());
-        System.out.println("Team Red: " + red.getPlayer1() + ", " + red.getPlayer2() + ", " + red.getPlayer3()
-                + ", " + red.getPlayer4() + ", " + red.getPlayer5());
-        System.out.println("Team Orange: " + orange.getPlayer1() + ", " + orange.getPlayer2() + ", " +
-                orange.getPlayer3()
-                + ", " + orange.getPlayer4() + ", " + orange.getPlayer5());
-        System.out.println("Team Neon: " + neon.getPlayer1() + ", " + neon.getPlayer2() + ", " + neon.getPlayer3()
-                + ", " + neon.getPlayer4() + ", " + neon.getPlayer5());
-        System.out.println("Team Purple: " + purple.getPlayer1() + ", " + purple.getPlayer2() + ", " +
-                purple.getPlayer3()
-                + ", " + purple.getPlayer4() + ", " + purple.getPlayer5());
-        System.out.println("-------------------------------------------------");
-        System.out.println();
+        printTeam(blue, "Blue");
+        printTeam(red, "Red");
+        printTeam(orange, "Orange");
+        printTeam(neon, "Neon");
+        printTeam(purple, "Purple");
 
+        printTeam(blue, "Blue");
+        blue.replacePlayer("Buck", "JimBob");
+        printTeam(blue, "Blue");
 
+    }
 
+    private static void printTeam(Team team, String teamName) {
+        System.out.println("Team " + teamName + ": " + team.getPlayer1() + ", " + team.getPlayer2() + ", " + team.getPlayer3()
+                + ", " + team.getPlayer4() + ", " + team.getPlayer5());
     }
 
 }

@@ -25,7 +25,24 @@ public class Team {
     //step 7 methods to switch players          ****work on this
     //i want to replace one player with another player on different teams
     public void replacePlayer(String playerNameRemove, String playerNameAdd){
-
+        if(playerNameRemove.equals(player1)) {
+            player1 = playerNameAdd;
+        }
+        else if(playerNameRemove.equals(player2)) {
+            player2 = playerNameAdd;
+        }
+        else if(playerNameRemove.equals(player3)) {
+            player3 = playerNameAdd;
+        }
+        else if(playerNameRemove.equals(player4)) {
+            player4 = playerNameAdd;
+        }
+        else if(playerNameRemove.equals(player5)) {
+            player5 = playerNameAdd;
+        }
+        else {
+            System.out.println(playerNameRemove + " not on this team.");
+        }
 
     }
 
