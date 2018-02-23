@@ -29,4 +29,8 @@ public class TeamWithSet {
 			System.out.println(playerNameRemove + " Not found on team");
 		}
 	}
+
+	public Set<String> getTeamMembers() {
+		return teamMembers;
+	}
 }
