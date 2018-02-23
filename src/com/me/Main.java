@@ -4,6 +4,8 @@ players out between those teams*/
 
 package com.me;
 
+import static java.util.stream.Collectors.joining;
+
 import java.util.Arrays;
 
 public class Main {
@@ -39,6 +41,19 @@ public class Main {
         blueWithArray.replacePlayer("Bill", "Bandit");
         printTeam(blueWithArray, "Blue With Array");
 
+	    TeamWithSet blueWithSet = new TeamWithSet("Bob", "Bill", "Bo", "Ben", "Buck");
+	    System.out.println("------------------------------------");
+	    printTeam(blueWithSet, "Blue before swap");
+	    blueWithSet.replacePlayer("Bo", "Patrick");
+	    printTeam(blueWithSet, "Blue after swap");
+
+    }
+
+    private static  void printTeam(TeamWithSet team, String teamName) {
+    	// ignore this line for now
+	    String asString = team.getTeamMembers().stream().collect(joining(", "));
+
+	    System.out.println(teamName + ": " + asString);
     }
 
     private static void printTeam(TeamWithArray teamWithArray, String teamName) {
