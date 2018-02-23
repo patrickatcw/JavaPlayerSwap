@@ -4,6 +4,8 @@ players out between those teams*/
 
 package com.me;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +31,19 @@ public class Main {
         blue.replacePlayer("Buck", "JimBob");
         printTeam(blue, "Blue");
 
+        System.out.println("Done with first version of Team, using ArrayTeam now");
+
+        TeamWithArray blueWithArray = new TeamWithArray("Bob", "Bill", "Bo", "Ben", "Buck");
+
+        printTeam(blueWithArray, "Blue With Array");
+        blueWithArray.replacePlayer("Bill", "Bandit");
+        printTeam(blueWithArray, "Blue With Array");
+
+    }
+
+    private static void printTeam(TeamWithArray teamWithArray, String teamName) {
+        String team = Arrays.toString(teamWithArray.getTeamMembers());
+        System.out.println(teamName + ": " + team);
     }
 
     private static void printTeam(Team team, String teamName) {
